@@ -1,0 +1,123 @@
+/* position fixed*/
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* container 固定大小 居中定位*/
+.container {
+  margin: 0 auto;
+  height: 100%;
+}
+/* 超大屏 高分辨率 pc*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+  .sidebar {
+    width: 300px;
+  }
+}
+/* 大屏 低分辨率 pc*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+  .sidebar {
+    width: 270px;
+  }
+}
+/* 小屏 PDA 和 大屏手机*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+
+  .sidebar {
+    width: 240px;
+  }
+}
+/*超小屏幕，主要是手机横屏*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+/* 微小屏 手机坚屏*/
+@media (min-width: 320px) and (max-width: 575px) {
+  .container {
+    width: auto;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .program {
+    display: none;
+  }
+
+  .account {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: auto;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .program {
+    display: none;
+  }
+
+  .account {
+    display: none;
+  }
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  height: 3.5rem;
+}
+
+.limit {
+  width: 100%;
+  height: 100%;
+}
+
+.brand {
+  float: left;
+  width: 100px;
+  height: 100%;
+  line-height: 3.3rem;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .brand {
+    width: 100px;
+    flex: 0;
+  }
+}
+
+.row {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: end;
+}
+
+.main {
+  flex: 1;
+}

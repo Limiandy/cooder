@@ -1,0 +1,285 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: Andy
+ * @Date: 2020-03-17 13:16:04
+ * @LastEditors: Andy
+ * @LastEditTime: 2020-04-16 11:05:27
+ -->
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <title>编程者-分享技术经验</title>
+    <link rel="shortcut icon" href="./img/TB1_oz6GVXXXXaFXpXXJDFnIXXX-64-64.ico" type="image/x-icon">
+    <link
+      href="https://cdn.bootcss.com/font-awesome/5.12.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheet/base.css" />
+    <link rel="stylesheet" href="./stylesheet/layout.css" />
+    <link rel="stylesheet" href="./stylesheet/index.css" />
+    <link rel="stylesheet" href="./icomoon/style.css" />
+    <script
+      type="text/javascript"
+      src="./bower_components/mockjs/dist/mock.js"
+    ></script>
+    <script src="./mock/mocks.js"></script>
+    <script src="./js/template.js"></script>
+    <script src="./js/xhros.js"></script>
+    <script src="./js/commad.js"></script>
+    <style>
+      /* html {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="fixed navbar">
+        <div class="limit">
+          <a class="brand" href="https://www.baidu.com">编程者</a>
+          <div class="program">
+            <a class="btn" id="program_btn">
+              <i class="fa fa-paw" style="padding-right: 5px;"></i>小程序
+            </a>
+            <div class="popover-modal" id="program_pop_modal">
+              功能正在开发中，敬请期待
+            </div>
+          </div>
+          <div class="account">
+            <a class="btn" id="account_btn">
+              <i class="fa fa-comments" style="padding-right: 5px;"></i>公众号
+            </a>
+            <div class="popover-modal" id="account_pop_modal">
+              功能正在开发中，敬请期待
+            </div>
+          </div>
+          <div class="theme">
+            <a class="btn" id="theme_btn">Aa </a>
+            <div class="popover-modal" id="theme_pop_modal">
+              <div class="linight-modal">
+                <div class="meta">
+                  <i class="fas fa-moon" id="moon"></i>
+                  <span>夜晚模式</span>
+                </div>
+                <div class="linight-modal-switch">
+                  <a class="btn switch-btn">开</a>
+                  <a class="btn switch-btn active">关</a>
+                </div>
+              </div> <!-- linight model end-->
+              <hr/>
+              <div class="font-style-modal">
+                <div class="font-change">
+                  <a class="btn switch-btn">宋体</a>
+                  <a class="btn switch-btn active">黑体</a>
+                </div>
+                <div class="simpTrad-change">
+                  <a class="btn switch-btn active">简</a>
+                  <a class="btn switch-btn">繁</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- navbar toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="container" id="collapsibleNavbar">
+            <ul class="nav-contant">
+              <li>
+                <a class="btn home" href="#"
+                  ><i class="fa fa-compass" style="padding-right: 5px;"></i
+                  >主页</a
+                >
+              </li>
+              <li>
+                <div class="mobile">
+                  <a class="btn" id="mobile_btn">
+                    <i class="fa fa-mobile" style="padding-right: 5px;"></i>
+                    手机访问
+                  </a>
+                  <div class="popover-modal" id="mobile_pop_modal">
+                    <img src="./img/homeQR.svg" alt="">
+                  </div>
+                </div>
+              </li>
+              <li class="search">
+                <form action="">
+                  <input type="text" autocomplete="off" placeholder="搜索" />
+                  <a class="btn search-btn"><i class="fa fa-search"></i></a>
+                </form>
+              </li>
+            </ul>
+          </div>
+          <!-- container -->
+        </div>
+      </nav>
+      <!-- nav end -->
+      <div class="container">
+        <div class="row">
+          <div class="main" id="tplist">
+            <article>
+              <header>
+                <a href="#"
+                  ><h5>请默哀3分钟，哀悼我们的抗疫烈士，我们的遇难同胞</h5></a
+                >
+              </header>
+              <p>
+                生，或轻于鸿毛；死，或重于泰山。
+                2020年1月23日，武汉疫情告急，紧急发布封城通知，求援全国，吹响全民抗击新冠肺炎疫情的战斗号角，无数仁人志生，或轻于鸿毛；死，或重于泰山。
+                2020年1月23日，武汉疫情告急，紧急发布封城通知，求援全国，吹响全民抗击新冠肺炎疫情的战斗号角，无数仁人志
+              </p>
+              <footer>
+                <span class="jsd-category"
+                  ><i class="fas fa-bookmark"></i>nodejs</span
+                >
+                <span><i class="fas fa-tags"></i>express</span>
+                <span><i class="far fa-eye"></i>6</span>
+                <span class="jsd-heart"><i class="fas fa-heart"></i>10</span>
+                <span><i class="icon-uniE900"></i>2</span>
+              </footer>
+            </article>
+          </div>
+          <!-- main end -->
+          <div class="sidebar">
+            <ul class="category-btns">
+              <li class="category-btns-item">
+                <a class="btn js-btn"
+                  >JavaScript<i class="fa fa-chevron-right"></i
+                  ><span><i class="fab fa-jsfiddle"></i></span
+                ></a>
+              </li>
+              <li class="category-btns-item">
+                <a class="btn es6-btn"
+                  >ECMAScript<i class="fa fa-chevron-right"></i
+                  ><span><i class="fas fa-bug"></i></span
+                ></a>
+              </li>
+              <li class="category-btns-item">
+                <a class="btn vue-btn"
+                  >MVVM Vue<i class="fa fa-chevron-right"></i>
+                  <span><i class="fab fa-vuejs"></i></span>
+                </a>
+              </li>
+              <li class="category-btns-item">
+                <a class="btn node-btn"
+                  >NodeJS<i class="fa fa-chevron-right"></i>
+                  <span><i class="fab fa-node"></i></span>
+                </a>
+              </li>
+            </ul>
+            <!-- category-btns end -->
+            <!-- 移动终端浏览二维码 -->
+            <div class="mobile-QR-side">
+              <a class="btn mobile-viewQR-btn">
+                <div class="qrimg">
+                  <embed src="./img/homeQR.svg" type="" />
+                </div>
+                <div class="text-dec">
+                  <p>使用移动设备浏览 <i class="fa fa-chevron-right"></i></p>
+                  <p>随时随地发现新内容</p>
+                </div>
+              </a>
+              <div class="showQR">
+                <embed src="./img/homeQR.svg" type="" />
+              </div>
+            </div>
+            <!-- mobile-QR-side end -->
+            <!-- 文章推荐 -->
+            <article class="article-recommendation">
+              <header>
+                <span>推荐文章阅读</span
+                ><a class="btn another-batch-btn"
+                  ><i class="fas fa-sync"></i>换一批</a
+                >
+              </header>
+              <aside>
+                <div class="article-img">
+                  <img src="./img/b8611cc48f1fd35a06861a47fc712428.jpg" />
+                </div>
+                <div class="article-main">
+                  <p>Nodejs 应用技术</p>
+                  <a href="#">阅读<i class="fa fa-chevron-right"></i></a>
+                  <footer>cooder · 3.3k喜欢</footer>
+                </div>
+              </aside>
+
+              <aside>
+                <div class="article-img">
+                  <img src="./img/b8611cc48f1fd35a06861a47fc712428.jpg" />
+                </div>
+                <div class="article-main">
+                  <p>Nodejs 应用技术</p>
+                  <a href="#">阅读<i class="fa fa-chevron-right"></i></a>
+                  <footer>cooder · 3.3k喜欢</footer>
+                </div>
+              </aside>
+
+              <a href="#" class="btn open-all-btn"
+                >查看全部<i class="fa fa-chevron-right"></i
+              ></a>
+            </article>
+            <!-- article-recommendation end -->
+          </div>
+          <!-- sidebar end -->
+        </div>
+        <!-- row end -->
+      </div>
+      <!-- container end -->
+      <footer>
+        <div class="container">
+          <div class="footer-main">
+            <p>
+              &copy;2020 编程者 黑ICP备20000827号-1<a
+                href="http://beian.miit.gov.cn"
+                target="_blank"
+              >
+              <img src="./img/smrz.png" alt="smrz">
+            </a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script id="article-list" type="text/html">
+      <%for(let i in article){%>
+        <article>
+          <header>
+            <a style="cursor: pointer;" onclick="detailedArticle(<%=article[i].id%>)"><h5><%=article[i].title%></h5></a>
+          </header>
+          <p><%=article[i].body%></p>
+          <footer>
+            <span class="jsd-category"><i class="fas fa-bookmark"></i><%=article[i].ceatgory%></span>
+            <span><i class="fas fa-tags"></i><%=article[i].label%></span>
+            <span><i class="far fa-eye"></i><%=article[i].see%></span>
+            <span class="jsd-heart"><i class="fas fa-heart"></i><%=article[i].heart%></span>
+            <span><i class="icon-uniE900"></i><%=article[i].meary%></span>
+          </footer>
+        </article>
+      <%}%>
+    </script>
+
+    <script>
+      $_xhr.get("/cooderi/article/list", res => {
+        let html = template(
+          document.getElementById("article-list").innerHTML,
+          {'article': res}
+        );
+        document.getElementById("tplist").innerHTML = html;
+      });
+    </script>
+  </body>
+</html>
